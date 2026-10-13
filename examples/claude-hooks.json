@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "asyncRewake": true,
+            "timeout": 604800,
+            "command": "python3 \"/absolute/path/to/codex-session-messenger/scripts/claude_hook.py\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "asyncRewake": true,
+            "timeout": 604800,
+            "command": "python3 \"/absolute/path/to/codex-session-messenger/scripts/claude_hook.py\""
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "session_messenger": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--script",
+        "./scripts/server.py"
+      ],
+      "cwd": "."
+    }
+  }
+}

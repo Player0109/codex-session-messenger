@@ -1,0 +1,25 @@
+{
+  "name": "codex-session-messenger",
+  "version": "0.1.0",
+  "description": "Exchange messages between local Codex and Claude Code sessions through MCP.",
+  "author": {
+    "name": "Amrendra (Player0109)"
+  },
+  "interface": {
+    "displayName": "Codex Session Messenger",
+    "shortDescription": "Connect local Codex and Claude Code sessions.",
+    "longDescription": "Discover local Codex and running Claude Code sessions, exchange attributed peer messages, and read a persistent local inbox. Codex hooks deliver messages after tools finish; Claude Code hooks can wake idle sessions. Cloud-only sessions are not supported.",
+    "developerName": "Amrendra (Player0109)",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "List my local Codex sessions.",
+      "Read messages addressed to this session."
+    ]
+  },
+  "mcpServers": "./.mcp.json",
+  "hooks": "./hooks/hooks.json"
+}

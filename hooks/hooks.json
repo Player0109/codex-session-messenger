@@ -1,0 +1,35 @@
+{
+  "hooks": {
+    "PostToolUse": [{
+      "hooks": [{
+        "type": "command",
+        "command": "exec python3 \"${PLUGIN_ROOT}/scripts/codex_hook.py\"",
+        "timeout": 10,
+        "additionalContextLimit": 0
+      }]
+    }],
+    "UserPromptSubmit": [{
+      "hooks": [{
+        "type": "command",
+        "command": "exec python3 \"${PLUGIN_ROOT}/scripts/codex_hook.py\"",
+        "timeout": 10,
+        "additionalContextLimit": 0
+      }]
+    }],
+    "SessionStart": [{
+      "hooks": [{
+        "type": "command",
+        "command": "exec python3 \"${PLUGIN_ROOT}/scripts/codex_hook.py\"",
+        "timeout": 10,
+        "additionalContextLimit": 0
+      }]
+    }],
+    "Stop": [{
+      "hooks": [{
+        "type": "command",
+        "command": "exec python3 \"${PLUGIN_ROOT}/scripts/codex_hook.py\"",
+        "timeout": 10
+      }]
+    }]
+  }
+}
